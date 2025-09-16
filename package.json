@@ -3,6 +3,8 @@
   "dependencies": {
     "@quasar/extras": "^1",
     "@tailwindcss/vite": "^4.1.12",
+    "@types/express": "^5.0.3",
+    "@types/express-session": "^1.18.2",
     "@types/mailparser": "^3.4.6",
     "@types/smtp-server": "^3.5.12",
     "@vue-macros/nuxt": "3.0.0-beta.23",
@@ -14,6 +16,8 @@
     "daisyui": "^5.0.54",
     "dedent": "^1.7.0",
     "effect": "^3.17.13",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
     "hardwired": "^1.6.2",
     "is": "^3.3.2",
     "mailparser": "^3.7.4",
@@ -31,9 +35,9 @@
   },
   "private": true,
   "scripts": {
-    "build": "nuxt build --host 0.0.0.0 --port ${PORT-3000}",
+    "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate --host 0.0.0.0 --port ${PORT-3000}",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "start": "node .output/server/index.mjs"

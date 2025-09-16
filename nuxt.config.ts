@@ -39,12 +39,18 @@ esbuild: {
     plugins: ['Dark', 'Notify']
   },
   extends: [
-     './src/app',
-    './src/domain/user',
-    './src/infrastructure/auth',
-    './src/infrastructure/theme',
-    './src/shared',
-    './src/infrastructure/email'
+   './src/app',
+   './src/domain/user',
+   './src/infrastructure/auth',
+   './src/infrastructure/theme',
+   './src/shared',
+   './src/infrastructure/email',
+   '/home/angelhdz/Documents/Programming/TypeScript/bla3/src/app',
+   '/home/angelhdz/Documents/Programming/TypeScript/bla3/src/domain/user',
+   '/home/angelhdz/Documents/Programming/TypeScript/bla3/src/infrastructure/auth',
+   '/home/angelhdz/Documents/Programming/TypeScript/bla3/src/infrastructure/theme',
+   '/home/angelhdz/Documents/Programming/TypeScript/bla3/src/shared',
+   '/home/angelhdz/Documents/Programming/TypeScript/bla3/src/infrastructure/email'
   ],
 
   typescript: {
