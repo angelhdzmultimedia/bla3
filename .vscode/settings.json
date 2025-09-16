@@ -1,0 +1,15 @@
+
+{
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.autoComplete.extraPaths": [
+        "/usr/lib/python3/dist-packages",
+        "src"
+    ],
+    "python.analysis.extraPaths": [
+        "/usr/lib/python3/dist-packages",
+        "src",
+    ],
+}
