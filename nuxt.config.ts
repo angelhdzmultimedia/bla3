@@ -44,11 +44,6 @@ esbuild: {
    "/home/angelhdz/Documents/Programming/TypeScript/bla3/src/infrastructure/auth",
    "/home/angelhdz/Documents/Programming/TypeScript/bla3/src/infrastructure/theme",
    "/home/angelhdz/Documents/Programming/TypeScript/bla3/src/shared",
-   ".//home/angelhdz/Documents/Programming/TypeScript/bla3/src/app",
-   ".//home/angelhdz/Documents/Programming/TypeScript/bla3/src/domain/user",
-   ".//home/angelhdz/Documents/Programming/TypeScript/bla3/src/infrastructure/auth",
-   ".//home/angelhdz/Documents/Programming/TypeScript/bla3/src/infrastructure/theme",
-   ".//home/angelhdz/Documents/Programming/TypeScript/bla3/src/shared",
    "/home/angelhdz/Documents/Programming/TypeScript/bla3/src/infrastructure/email"
   ],
 
