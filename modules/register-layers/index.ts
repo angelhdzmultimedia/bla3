@@ -3,7 +3,6 @@ import {consola} from 'consola'
 import { defineNuxtModule, useNuxt,  createResolver,  } from "nuxt/kit"
 import {existsSync, mkdirSync, readFileSync, writeFileSync} from 'node:fs'
 
-let firstRun = true
 
 import type { OptionalDeep } from "ts-toolbelt/out/Object/Optional"
 import { updateConfig } from "c12/update"
@@ -12,6 +11,7 @@ import { addServerApi } from "./add/server/api"
 import { addAppFiles } from "./add/app"
 import { addStore } from "./add/app/store"
 import { addNuxtConfig } from "./add/app/config"
+let firstRun = true
 
 
 function addLayer(layer: Layer) {
