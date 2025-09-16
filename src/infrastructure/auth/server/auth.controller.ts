@@ -3,7 +3,7 @@ import  { AuthService } from "./auth.service"
 import type { H3Event } from "h3"
 import { AuthGuard, sessionOptions } from "./auth.guard"
 import consola from "consola"
-import { controller, decorate, route, useGuards, usePipes } from "../../../../../bla/src/lib"
+import { controller, decorate, route, useGuards, usePipes } from "~~/src/lib"
 import {getQuery} from 'h3'
 import { AuthSignInPipe, AuthSignUpPipe } from "./auth.pipe"
 
