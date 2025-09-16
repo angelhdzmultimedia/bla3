@@ -11,7 +11,6 @@
         "@vue-macros/nuxt": "3.0.0-beta.23",
         "@vueuse/integrations": "^13.9.0",
         "@vueuse/nuxt": "13.9.0",
-        "ahdz-nuxt-builder": "link:ahdz-nuxt-builder",
         "c12": "^3.2.0",
         "change-case": "^5.4.4",
         "consola": "^3.4.2",
@@ -761,8 +760,6 @@
     "acorn-import-attributes": ["acorn-import-attributes@1.9.5", "", { "peerDependencies": { "acorn": "^8" } }, "sha512-n02Vykv5uA3eHGM/Z2dQrcD56kL8TyDb2p1+0P83PClMnC/nc+anbQRhIOWnSq4Ke/KvDPrY3C9hDtC/A3eHnQ=="],
 
     "agent-base": ["agent-base@7.1.4", "", {}, "sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ=="],
-
-    "ahdz-nuxt-builder": ["ahdz-nuxt-builder@link:ahdz-nuxt-builder", { "bin": { "nuxt-builder": "bin/index.mjs", "nuxt-create": "bin/index" } }],
 
     "alien-signals": ["alien-signals@2.0.7", "", {}, "sha512-wE7y3jmYeb0+h6mr5BOovuqhFv22O/MV9j5p0ndJsa7z1zJNPGQ4ph5pQk/kTTCWRC3xsA4SmtwmkzQO+7NCNg=="],
 
