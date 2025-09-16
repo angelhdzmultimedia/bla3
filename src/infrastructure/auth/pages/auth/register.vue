@@ -18,7 +18,10 @@ const registerForm = ref({
   
 
 const {register} = {
-  register: useAsyncData(() => auth.register(registerForm.value))
+  register: useAsyncData(() => auth.register(registerForm.value), {
+    server: false,
+    immediate: false,
+  })
 }
 
 async function onSubmit() {
@@ -29,6 +32,10 @@ async function onSubmit() {
       color: 'negative'
     })
   } else {
+    Notify.create({
+      message: register.data.value?.data.value,
+      color: 'info'
+    })
     navigateTo('/auth/login')
   }
 }

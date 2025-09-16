@@ -12,9 +12,9 @@ export class AuthService {
 
   register(registerData: any) {
     const token = Math.random().toString(36).slice(2)
-    users.push({...registerData, token, isVerified: false})
+    users.push({...registerData, token, isVerified: false, id: crypto.randomUUID()})
     this.sendVerificationEmail(registerData.email, token)
-    return registerData
+    return `Visit this link to verify your account: http://localhost:3000/api/auth/verify?token=${token}`
   }
 
   sendVerificationEmail(email: string, token: string) {

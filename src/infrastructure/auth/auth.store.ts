@@ -74,15 +74,15 @@ export class AuthStore {
   async verify() {
     this.status.value = 'pending'
     this.error.value = undefined
-    const {data, error, status} = await useAuthApi('/api/auth/verify', {
-      mode: 'same-origin',
-      method: 'get',
-      params: {
-        token: 'NULL'
-      }
-    })
+    if (!this.isAuthenticated.value) {
+      return false
+    }
+    if (this.user.value && this.user.value.isVerified) {
+      return true
+    }
+    this.status.value = 'success'
 
-    return data.value
+    return false
   }
 
   async logout() {

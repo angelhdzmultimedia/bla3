@@ -16,7 +16,10 @@ const loginForm = ref({
   
 
 const {login} = {
-  login: useAsyncData(() => auth.login(loginForm.value.email, loginForm.value.password))
+  login: useAsyncData(() => auth.login(loginForm.value.email, loginForm.value.password), {
+    server: false,
+    immediate: false,
+  })
 }
 
 async function onSubmit() {

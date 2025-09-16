@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'main'
+  layout: 'main',
+  middleware: ['auth', 'verify']
 })
 const auth = useAuth()
 </script>
@@ -13,7 +14,7 @@ const auth = useAuth()
      
     <span>
       Account Status: 
-    <q-chip color="red" text-color="white">Not Verified</q-chip>
+    <q-chip :color="auth.user.value?.isVerified ? 'green' : 'red'" text-color="white">{{ auth.user.value?.isVerified ? 'Verified' : 'Not Verified' }}</q-chip>
     </span>
     </div>
     Check your email for a verification link.
