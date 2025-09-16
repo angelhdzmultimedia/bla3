@@ -2,7 +2,7 @@ import consola from "consola"
 import  { type Definition, type LifeTime, container } from "hardwired"
 import type { CanActivate } from "~/src/infrastructure/auth/server/auth.guard"
 import type { ValidationPipe } from "~/src/infrastructure/auth/server/auth.pipe"
-import { type decorate, type Controller, type ClassType, decoMetadata } from "../../../../../bla/src/lib"
+import { type decorate, type Controller, type ClassType, decoMetadata } from "~~/src/lib"
 
 export function defineController<T>(classType: ClassType<T>) {
       type Args = ConstructorParameters<new (...args: any[]) => T>
